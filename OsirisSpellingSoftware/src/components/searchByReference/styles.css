@@ -1,0 +1,50 @@
+#referenceForm {
+    margin: 1em;
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-label {
+    font-size: x-large;
+    margin-bottom: 1em;
+}
+
+#referenceHelp {
+    font-size: small;
+}
+
+#submit-reference {
+    width: fit-content;
+    align-self: flex-end;
+    margin-top: 1em;
+
+}
+
+#referenceHelp,
+.submit-reference {
+    text-align: end;
+}
+
+#referenceInput {
+    background-color: rgb(255, 255, 255);
+    box-shadow: inset -1px -1px 3px .2px rgb(172, 172, 172),
+        inset 1px 1px 3px .2px rgb(0, 0, 0);
+    border-radius: 5px;
+}
+
+/* button styles */
+#referenceForm button {
+    background-color: #92999f;
+    color: #ffffff;
+    font-weight: bolder;
+    border-radius: 10px;
+    margin-top: 1.5em;
+    margin-bottom: 2em;
+    border: none;
+    transition: .2s;
+}
+
+#referenceForm button:hover {
+    background-color: #5C636A;
+}

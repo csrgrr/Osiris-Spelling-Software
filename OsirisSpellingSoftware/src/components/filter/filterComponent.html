@@ -1,0 +1,376 @@
+
+   <link rel="stylesheet" href="/src/components/filter/styles.css">
+
+	<form>
+<!---TABS---->
+    <ul class="nav nav-tabs" id="spellingTab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="spellings-tab" data-bs-toggle="tab" data-bs-target="#spellings" type="button" role="tab" aria-controls="spellings" aria-selected="true">Spellings</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="spells-tab" data-bs-toggle="tab" data-bs-target="#spells" type="button" role="tab" aria-controls="spells" aria-selected="false">Spells</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="documents-tab" data-bs-toggle="tab" data-bs-target="#documents" type="button" role="tab" aria-controls="documents" aria-selected="false">Documents</button>
+        </li>
+		<li class="nav-item" role="presentation">
+			<button class="nav-link" id="time-tab" data-bs-toggle="tab" data-bs-target="#time" type="button" role="tab" aria-controls="time" aria-selected="false">Time</button>
+		</li>
+		<li class="nav-item" role="presentation">
+			<button class="nav-link" id="location-tab" data-bs-toggle="tab" data-bs-target="#location" type="button" role="tab" aria-controls="location" aria-selected="false">Location</button>
+		</li>
+		<li class="nav-item" role="presentation">
+			<button class="nav-link" id="reference-tab" data-bs-toggle="tab" data-bs-target="#reference" type="button" role="tab" aria-controls="reference" aria-selected="false">Reference</button>
+		</li>
+    </ul>
+
+	<div class="tab-content">
+		<!---LOCUTION + SPELLINGS---->
+        <div class="tab-pane fade show active" id="spellings" role="tabpanel" aria-labelledby="spellings-tab">
+			<h3>GOD / LOCUTION</h3>
+			<div>
+				<button class="check locution active">wsir NN pn/tn</button>
+				<button class="check god active">wsir god</button>
+			</div>
+			<br>
+			<hr>
+			<div class="spelling-types">
+				<div class="function-spelling-btns">
+					<button class="all spelling filter-button">select/deselect all</button>
+					<select class="filter-selector spelling-selector" id="spelling-group">
+						<option value="all">all</option>
+						<option value="throne">eye-throne</option>
+						<option value="flesh">flesh</option>
+						<option value="others">others</option>
+					</select>
+					<select class="filter-selector spelling-selector" id="disposition">
+						<option value="all">all</option>
+						<option value="compact">compact</option>
+						<option value="vertical">vertical</option>
+						<option value="horizontal">horizontal</option>
+						<option value="retro">retro</option>
+					</select>
+					<select class="filter-selector spelling-selector" id="length">
+						<option value="all">all</option>
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+					</select>
+
+				</div>
+
+				<div id="spelling-btns"></div>
+			</div>
+
+		</div>
+		<!---SPELLS---->
+        <div class="tab-pane fade" id="spells" role="tabpanel" aria-labelledby="profile-tab">
+			<h3>BOOK</h3>
+			<div class="form-check form-switch">
+				<input class="form-check-input" type="checkbox" id="flexSwitchCheckSpell">
+				<label class="form-check-label" for="flexSwitchCheckSpell">Select by Spells</label>
+			</div>
+
+			<div class="pt-ct-btn">
+				<button class="check pt active">PT</button>
+				<button class="check ct active">CT</button>
+			</div>
+
+			<div id="spell-form-container">
+
+				<button id="add-spell" class="filter-button">Add</button>
+				<div class="form-check form-switch">
+					<input class="form-check-input" type="checkbox" id="spell-range-btn">
+					<label class="form-check-label" for="spell-range-btn">Select by Range</label>
+				</div>
+			
+
+				<br>
+				<!-- book selector-->
+				<select class="filter-selector" id="book-selection" name="book-selection">
+					<option value="PT">PT</option>
+					<option value="CT">CT</option>
+				</select>
+				<!-- number by value-->
+				<input type="number" id="spell" name="spell">
+				<!-- number by range-->
+				<div id="spell-range">
+					from
+					<input type="number" id="spell-range-start" name="spell">
+					to
+					<input type="number" id="spell-range-end" name="spell">
+
+				</div>
+			</div>
+		
+		</div>
+		<!---DOCUMENTS--->
+        <div class="tab-pane fade" id="documents" role="tabpanel" aria-labelledby="documents-tab">
+			<!-- DOCUMENT -->
+			<h3>DOCUMENT</h3>
+			<div class="documents">
+				<div class="function-document-btns">
+					<button class="all document filter-button">select/deselect all</button>
+					<select class="filter-selector document-selector" id="document-type">
+						<option value="all">all</option>
+						<option value="board">board</option>
+						<option value="canoptic-box">canoptic-box</option>
+						<option value="coffin">coffin</option>
+						<option value="doorjamb">doorjamb</option>
+						<option value="mask">mask</option>
+						<option value="papyrus">papyrus</option>
+						<option value="sarcophagus-gold-foil">sarcophagus-gold-foil</option>
+						<option value="tomb">tomb</option>
+					</select>
+				</div>
+				
+				<div id="document-btns"></div>
+			</div>
+			
+			<br>
+			<hr>
+			<!-------------------------------------------------------------------------------------------------------->
+			<!-- POSITIONS -->
+			<h3>POSITIONS</h3>
+			<div class="positions">
+				<button class="all position filter-button">select/deselect all</button> <br>
+				<button class="check position active individualBtn" value="H" >Head</button>
+				<button class="check position active individualBtn" value="F" >Foot</button>
+				<button class="check position active individualBtn" value="B" >Back</button>
+				<button class="check position active individualBtn" value="L" >Top/Lid</button>
+				<button class="check position active individualBtn" value="Fr">Front</button>
+				<button class="check position active individualBtn" value="Bo">Bottom</button>
+				<button class="check position active individualBtn" value="S" >Side</button>
+				<button class="check position active individualBtn" value="X" >Others</button>
+				<button class="check position active individualBtn" value="unknown">Unknown</button>
+			</div>
+		
+		</div>
+		<!---TIME--->
+        <div class="tab-pane fade" id="time" role="tabpanel" aria-labelledby="time-tab">
+			<h3>TIME</h3>
+			<button class="all time filter-button">select/deselect all</button><br>
+			<button class="check unknown-btn active">include unknown</button>
+			<br>
+			<div class="parent time">
+				<div class="grid div1"> <button class="check time active kingdom individualBtn" value="end I I.P.">end I I.P.</button></div>
+				<div class="grid div2"> <button class="check time active kingdom individualBtn" value="Mentuhotep II">Mentuhotep II</button></div>
+				<div class="grid div3"> <button class="check time active kingdom individualBtn" value="Mentuhotep III">Mentuhotep III</button></div>
+				<div class="grid div4"> <button class="check time active kingdom individualBtn" value="Amenemhat I">Amenemhat I</button></div>
+				<div class="grid div5"> <button class="check time active kingdom individualBtn" value="Senusret I">Senusret I</button></div>
+				<div class="grid div6"> <button class="check time active kingdom individualBtn" value="Amenemhat II">Amenemhat II</button></div>
+				<div class="grid div7"> <button class="check time active kingdom individualBtn" value="Senusret II">Senusret II</button></div>
+				<div class="grid div8"> <button class="check time active kingdom individualBtn" value="Senusret III">Senusret III</button></div>
+				<div class="grid div9"> <button class="check time active kingdom individualBtn" value="Amenemhat III">Amenemhat III</button></div>
+				<div class="grid div10"><button class="check time active kingdom individualBtn" value="Sewahenre">Sewahenre</button></div>
+				<div class="grid div11"><button class="check time active dynasty individualBtn" value="XI">XI</button></div>
+				<div class="grid div12"><button class="check time active dynasty individualBtn" value="XII">XII</button> </div>
+				<div class="grid div13"><button class="check time active dynasty individualBtn" value="XIII">XIII</button> </div>
+				<div class="grid div14 iip"><button class="check time active era individualBtn" value="I I.P.">I I.P.</button> </div>
+				<div class="grid div15 mk"><button class="check time active era individualBtn" value="MK">Middle Kingdom</button> </div>
+				<div class="grid div16 iiip"><button class="check time active era individualBtn" value="II I.P.">II I.P.</button> </div>
+				</div>
+			
+
+			<!--------------------------------->
+
+			
+			<br>
+			<hr>
+		</div>
+		<!--LOCATION--->
+        <div class="tab-pane fade" id="location" role="tabpanel" aria-labelledby="location-tab">
+			<h3>LOCATION </h3>
+			<div class="location">
+				<div class="function-location-btns">
+					<button class="all location filter-button">select/deselect all</button>
+					<div id="document-btns">
+						<button class="check location active individualBtn" value="Abusir">Abusir</button>
+						<button class="check location active individualBtn" value="Abydos">Abydos</button>
+						<button class="check location active individualBtn" value="Asyut">Asyut</button>
+						<button class="check location active individualBtn" value="Beni Hassan">Beni Hassan</button>
+						<button class="check location active individualBtn" value="Bersha">Bersha</button>
+						<button class="check location active individualBtn" value="Dahshur">Dahshur</button>
+						<button class="check location active individualBtn" value="Denderah">Denderah</button>
+						<button class="check location active individualBtn" value="Gebelein">Gebelein</button>
+						<button class="check location active individualBtn" value="Kaor">Kaor</button>
+						<button class="check location active individualBtn" value="Lisht">Lisht</button>
+						<button class="check location active individualBtn" value="Meir">Meir</button>
+						<button class="check location active individualBtn" value="Riqqah">Riqqah</button>
+						<button class="check location active individualBtn" value="Saqqara">Saqqara</button>
+						<button class="check location active individualBtn" value="Sedment">Sedment</button>
+						<button class="check location active individualBtn" value="Thebes">Thebes</button>
+						<button class="check location active individualBtn" value="?">?</button>
+					</div>
+			</div>
+		</div>
+	</div>
+		<!--REFERENCE-->
+        <div class="tab-pane fade" id="reference" role="tabpanel" aria-labelledby="reference-tab">
+				<!-- VOLUME -->
+			<h3>VOLUME</h3>
+			<div id="volume-form-container">
+
+				<button id="add-volume" class="filter-button">Add</button>
+				<div class="form-check form-switch">
+					<input class="form-check-input" type="checkbox" id="volume-range-btn">
+					<label class="form-check-label" for="volume-range-btn">Select by Range</label>
+				</div>
+
+				<br>
+				<!-- Volume by value-->
+				<select class="filter-selector" id="volume" name="volume">
+					<option value="I">I</option>
+					<option value="II">II</option>
+					<option value="III">III</option>
+					<option value="IV">IV</option>
+					<option value="V">V</option>
+					<option value="VI">VI</option>
+					<option value="VII">VII</option>
+					<option value="VIII">VIII</option>
+				</select>
+				<!-- Volume by range-->
+				<div id="volume-range">from
+					<select class="filter-selector" id="volume-range-start">
+						<option value="I">I</option>
+						<option value="II">II</option>
+						<option value="III">III</option>
+						<option value="IV">IV</option>
+						<option value="V">V</option>
+						<option value="VI">VI</option>
+						<option value="VII">VII</option>
+						<option value="VIII">VIII</option>
+					</select>
+					to
+					<select class="filter-selector" id="volume-range-end">
+						<option value="II">II</option>
+						<option value="III">III</option>
+						<option value="IV">IV</option>
+						<option value="V">V</option>
+						<option value="VI">VI</option>
+						<option value="VII">VII</option>
+						<option value="VIII">VIII</option>
+					</select>
+				</div>
+			</div>
+
+			<br>
+			<hr>
+
+	<!-------------------------------------------------------------------------------------------------------------------------->
+			<!-- PAGE -->
+			<h3>PAGE</h3>
+			<div id="page-form-container">
+
+				<button id="add-page" class="filter-button">Add</button>
+				<div class="form-check form-switch">
+					<input class="form-check-input" type="checkbox" id="page-range-btn">
+					<label class="form-check-label" for="page-range-btn">Select by Range</label>
+				</div>
+
+
+				<br>
+				<!-- number by value-->
+				<input type="number" id="page" name="page">
+				<!-- number by range-->
+				<div id="page-range">
+					from
+					<input type="number" id="page-range-start" name="page"><br>
+					to
+					<input type="number" id="page-range-end" name="page">
+
+				</div>
+			</div>
+			<br>
+			<hr>
+	<!-------------------------------------------------------------------------------------------------------------------------->
+			<!-- SECTION -->
+			<h3>SECTION</h3>
+			<div id="section-form-container">
+				<button id="add-section" class="filter-button">Add</button>
+				<div class="form-check form-switch">
+					<input class="form-check-input" type="checkbox" id="section-range-btn">
+					<label class="filter-selector form-check-label" for="section-range-btn">Select by Range</label>
+				</div>
+
+				  <br>
+				  <!-- limit to 1-2 characters -->
+				  <input type="text" id="section" name="section" maxlength="2" pattern="[A-Za-z]{1,2}" onkeydown="return /[a-z]/i.test(event.key)" >
+				   <!-- by range (also character limit)-->
+				  <div id="section-range">
+					from
+					<input type="text" id="section-range-start" name="section" maxlength="2" pattern="[a-zA-Z]{1,2}" onkeydown="return /[a-z]/i.test(event.key)">
+					<br>
+					to
+					<input type="text" id="section-range-end" name="section" maxlength="2" pattern="[a-zA-Z]{1,2}" onkeydown="return /[a-z]/i.test(event.key)">
+				  </div>
+			</div>
+			<br>
+			<hr>
+	<!-------------------------------------------------------------------------------------------------------------------------->
+			<!--PYR_PAGE -->
+			<h3>PYR_PAGE</h3>
+			<div id="pyr-page-form-container">
+
+				<button id="add-pyr-page" class="filter-button">Add</button>
+				<div class="form-check form-switch">
+					<input class="form-check-input" type="checkbox" id="pyr-page-range-btn">
+					<label class="form-check-label" for="pyr-page-range-btn">Select by Range</label>
+				</div>
+
+				<br>
+				<!-- number by value-->
+				<input type="number" id="pyr-page" name="pyr-page">
+				<!-- number by range-->
+				<div id="pyr-page-range">
+					from
+					<input type="number" id="pyr-page-range-start" name="pyr-page"><br>
+					to
+					<input type="number" id="pyr-page-range-end" name="pyr-page">
+
+				</div>
+			</div>
+			<br>
+			<hr>
+	<!-------------------------------------------------------------------------------------------------------------------------->
+			<!-- PYR SECTION -->
+			<h3>PYR SECTION</h3>
+			<div id="pyr-section-form-container">
+				<button id="add-pyr-section" class="filter-button">Add</button>
+				<div class="form-check form-switch">
+					<input class="form-check-input" type="checkbox" id="pyr-section-range-btn">
+					<label class="form-check-label" for="pyr-section-range-btn">Select by Range</label>
+				</div>
+			
+
+				  <br>
+				  <!-- limit to 1-2 characters -->
+				  <input type="text" id="pyr-section" name="pyr-section" maxlength="2" pattern="[A-Za-z]{1,2}" onkeydown="return /[a-z]/i.test(event.key)" >
+				   <!-- by range (also character limit)-->
+				  <div id="pyr-section-range">
+					from
+					<input type="text" id="pyr-section-range-start" name="pyr-section" maxlength="2" pattern="[a-zA-Z]{1,2}" onkeydown="return /[a-z]/i.test(event.key)">
+					<br>
+					to
+					<input type="text" id="pyr-section-range-end" name="pyr-section" maxlength="2" pattern="[a-zA-Z]{1,2}" onkeydown="return /[a-z]/i.test(event.key)">
+				  </div>
+			</div>
+		</div>
+ 
+
+	<!-------------------------------------------------------------------------------------------------------------------------->
+
+	
+
+
+
+  <!--SUBMIT-->
+  <div class="submit ">
+	<button class="submit-filter filter-button" >Filter</button>
+  </div>
+	
+<!-------------------------------END FORM------------------------------------------------------------------------------------------->
+	</form>
+	<!--Filter Component-->
+	<script type="module" src="/src/components/filter/filterComponent.js"></script>

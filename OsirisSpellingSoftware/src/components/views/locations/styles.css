@@ -1,0 +1,28 @@
+.locations-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    box-sizing: border-box;
+    width: 80%;
+    margin: auto;
+    margin-top: 3em;
+    margin-bottom: 3em;
+}
+
+.locations-container h1,
+.locations-container p {
+    margin-bottom: 1em;
+}
+
+.locations-container p {
+    text-align: justify;
+}
+
+.locations-container img {
+    box-sizing: border-box;
+    padding: 2em;
+
+    border: solid #2D2F34 5px;
+    border-style: dashed;
+}

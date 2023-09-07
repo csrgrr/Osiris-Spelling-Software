@@ -1,0 +1,39 @@
+.modal.fade {
+    margin-left: -30%;
+}
+
+.modal-backdrop {
+    margin-left: -30%;
+}
+
+.modal-header,
+.modal-footer {
+    background-color: #A9D18E;
+}
+
+.modal-body {
+    background-color: rgb(226, 255, 222);
+    text-align: center;
+}
+
+/* SPELLING DETAILS */
+.spelling-detail-img {
+    width: 20em;
+}
+
+.mdc-color {
+    color: rgb(192, 0, 0);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+@media (max-width:870px) {
+    .modal.fade {
+        margin-left: -92%;
+    }
+
+    .modal-backdrop {
+        margin-left: -92%;
+    }
+
+
+}

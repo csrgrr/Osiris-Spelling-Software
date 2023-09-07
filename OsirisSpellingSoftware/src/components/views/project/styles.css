@@ -1,0 +1,35 @@
+.project-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    box-sizing: border-box;
+    width: 80%;
+    margin: auto;
+    margin-top: 3em;
+    margin-bottom: 3em;
+}
+.project-container h1{
+    margin-bottom: 1em;
+}
+
+.project-container div{
+    box-sizing: border-box;
+    padding: 2em;
+
+    border: solid #2D2F34 5px;
+    border-style: dashed;
+    
+    text-align: justify;
+}
+.project-container div{
+    border-bottom: none;
+}
+.project-container div:last-of-type{
+    border-bottom: solid #2D2F34 5px;
+    border-style: dashed;
+}
+
+.cc{
+    text-align: center;
+}

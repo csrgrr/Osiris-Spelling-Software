@@ -1,0 +1,51 @@
+.sources-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    box-sizing: border-box;
+    width: 80%;
+    margin: auto;
+    margin-top: 3em;
+    margin-bottom: 3em;
+}
+
+.sources-container h1 {
+    margin-bottom: 1em;
+}
+
+.sources-container div {
+    box-sizing: border-box;
+    padding: 2em;
+
+    border: solid #2D2F34 5px;
+    border-style: dashed;
+
+    text-align: justify;
+}
+
+.sources-container div:first-of-type {
+    border-bottom: none;
+}
+
+.sources-container div:first-of-type h3 {
+    margin-bottom: 1em;
+}
+
+.sources-container div ul li {
+    margin: 2em;
+}
+
+@media (max-width:440px) {
+
+    .sources-container {
+
+        font-size: x-small;
+    }
+
+    .bibliography {
+        list-style: none;
+        margin-left: -3em;
+    }
+
+}

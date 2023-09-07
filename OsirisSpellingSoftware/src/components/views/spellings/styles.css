@@ -1,0 +1,71 @@
+.spelling-card-container{
+    display: flex;
+    flex-direction: column;
+
+    box-sizing: border-box;
+    width: 80%;
+    margin: auto;
+}
+.spelling-card-container h1 {
+    margin-top: 2em;
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+.spelling-card-container p, 
+.spelling-card-container li{
+    font-size: small;
+    text-align: justify;
+}
+
+.spelling-card-container h3 {
+    margin-top: 2em;
+    margin-bottom: 1em;
+}
+
+.eye-throne-container,
+.flesh-mouth-container,
+.others-container{
+    border: solid #2D2F34 5px;
+    border-style: dashed;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    box-sizing: border-box;
+    margin: auto;
+    margin-bottom: 2em;
+}
+.spelling-info {
+    background-color: #A9D18E;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    box-sizing: border-box;
+    min-width: 20em;
+    max-width: 20em;
+    max-height: 30em;
+    margin: 2em;
+    padding: 2em;
+    border-radius: 15px;
+
+    font-size: small;
+}
+
+.spelling-info img{
+    width: 4em;
+}
+
+@media (max-width:870px) {
+
+    .spelling-info {
+        min-width: 15em;
+        max-width: 15em;
+    }
+  
+    
+}

@@ -1,0 +1,57 @@
+div.collapse-nav-smartphone {
+    margin-top: 2em;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+
+    width: 100%;
+}
+
+div.collapse-nav-smartphone a,
+div.collapse-nav-smartphone p {
+    font-size: xx-large;
+    white-space: nowrap;
+}
+
+@media (max-width:680px) {
+
+    div.collapse-nav-smartphone a,
+    div.collapse-nav-smartphone p {
+        font-size: x-large;
+    }
+}
+
+@media (max-width:540px) {
+
+    div.collapse-nav-smartphone a,
+    div.collapse-nav-smartphone p {
+        font-size: large;
+    }
+}
+
+@media (max-width:435px) {
+
+    div.collapse-nav-smartphone a,
+    div.collapse-nav-smartphone p {
+        font-size: medium;
+    }
+}
+
+@media (max-width:400px) {
+
+    div.collapse-nav-smartphone a,
+    div.collapse-nav-smartphone p {
+        font-size: small;
+    }
+}
+
+@media (max-width:350px) {
+
+    div.collapse-nav-smartphone a,
+    div.collapse-nav-smartphone p {
+        font-size: smaller;
+    }
+}

@@ -1,0 +1,30 @@
+@font-face {
+  font-family: 'ModeSeven';
+  src: url('assets/fonts/mode-seven.ttf') format('truetype');
+}
+
+body {
+  background-color: #A9D18E;
+  font-family: 'ModeSeven';
+  overflow: hidden;
+}
+
+/*Animation intro*/
+
+@keyframes myAnimation {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+body {
+  animation-name: myAnimation;
+  animation-duration: 2s;
+  animation-delay: 1.5s;
+  opacity: 0;
+  animation-fill-mode: forwards;
+}

@@ -1,0 +1,68 @@
+<!-- STYLES -->
+<link rel="stylesheet" href="/src/components/charts/styles.css" />
+<div id="charts-display">
+
+  <div id="chart-btn-container">
+    <div class="chart-btn-group">
+      <!-- <span>ENGRAMATION -></span> -->
+      <div class="btn-group" role="group" aria-label="engramation">
+        <button class="btn btn-secondary border" id="mdc-change">MdC</button>
+        <button class="btn btn-secondary border" id="locution-change">Locution / God</button>
+        <button class="btn btn-secondary border" id="spelling-groups-change">Spelling groups</button>
+        <button class="btn btn-secondary border" id="signs-change">Signs</button>
+        <button class="btn btn-secondary border" id="disposition-change">Sign disposition</button>
+        <button class="btn btn-secondary border" id="length-change">Sign length</button>
+      </div>
+
+      <!-- <span>SPELLS -></span> -->
+      <div class="btn-group" role="group" aria-label="spells">
+        <button class="btn btn-secondary border" id="books-change">Books</button>
+        <button class="btn btn-secondary border" id="spells-change">Spells</button>
+      </div>
+
+      <!-- <span>DOCUMENTS -></span> -->
+      <div class="btn-group" role="group" aria-label="documents">
+        <button class="btn btn-secondary border" id="documents-change">Documents</button>
+        <button class="btn btn-secondary border" id="types-change">Types</button>
+        <button class="btn btn-secondary border" id="positions-change">Positions</button>
+      </div>
+
+      <!-- <span>CONTEXT -></span> -->
+      <div class="btn-group" role="group" aria-label="context">
+        <button class="btn btn-secondary border" id="locations-change">Locations</button>
+        <button class="btn btn-secondary border" id="time-change">Time</button>
+      </div>
+    </div>
+
+
+    <div class="chart-btn-group">
+      <div class="btn-group" role="group" aria-label="style">
+        <button class="btn btn-secondary border" id="changeChartType">Chart type</button>
+        <button class="btn btn-secondary border" id="changeColorType">Color / B & W</button>
+      </div>
+      <br>
+
+      <button class="btn btn-secondary border" id="download">Download Chart</button>
+    </div>
+  </div>
+
+
+  <div class="canvas-container">
+   
+    <canvas class="chart" id="mdcChart"></canvas>
+    <canvas class="chart" id="locutionChart"></canvas>
+    <canvas class="chart" id="spellingGroupsChart"></canvas>
+    <canvas class="chart" id="signsChart"></canvas>
+    <canvas class="chart" id="dispositionChart"></canvas>
+    <canvas class="chart" id="lengthChart"></canvas>
+    <canvas class="chart" id="booksChart"></canvas>
+    <canvas class="chart" id="spellsChart" width="800px" height="6000px"></canvas>
+    <canvas class="chart" id="documentsChart" width="800px" height="2000px"></canvas>
+    <canvas class="chart" id="typesChart"></canvas>
+    <canvas class="chart" id="positionsChart"></canvas>
+    <canvas class="chart" id="locationsChart"></canvas>
+    <canvas class="chart" id="timeChart"></canvas>
+  </div>
+</div>
+
+<script type="module" src="/src/components/charts/charts.js"></script>
